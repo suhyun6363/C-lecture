@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main(void) {
+	char k;
+	int n;
+	k = 'A';
+	printf("k = %c\n", k);
+	k = 66;
+	printf("k = %c\n", k);
+	n = 67;
+	printf("n = %c\n", n);
+
+}
