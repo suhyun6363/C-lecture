@@ -59,7 +59,6 @@ void input_info(Student_t* p) {
 int main(void) {
 	Student_t studentArray[5];
 	Grade_t grade[5];
-	Student_t* p;
 
 
 	
@@ -69,7 +68,7 @@ int main(void) {
 	printf("[%lu] %s (%s)\n", student.stu_id, student.name, (student.major == SOFTWARE)?"SOFTWARE":"COMPUTER_ENG");
 	printf("CnLinux: %lu\npython: %lu\nComNet: %lu\n", student.score.CnLinux, student.score.python, student.score.comnet);
 	*/
-
+/*
 	p = studentArray;
 	
 	for(int i = 0; i<5; i++) {
@@ -87,14 +86,16 @@ int main(void) {
 		p++;
 
 	}
+*/
 	//method 2
 	//main 함수 내에서 studentArray.score->CnLinux = 0
 	
+	init_student(studentArray);
 	for(int i = 0 ; i<5; i++) {
 		printf("student[%d]\n", i+1);
-		printf("CnLinux: %lu\n", studentArray[i].score->CnLinux);
-		printf("python: %lu\n", studentArray[i].score->python);
-		printf("comnet: %lu\n", studentArray[i].score->comnet);
+		printf("CnLinux: %lu\n", studentArray[i].score.CnLinux);
+		printf("python: %lu\n", studentArray[i].score.python);
+		printf("comnet: %lu\n", studentArray[i].score.comnet);
 		printf("\n");
 	}
 }

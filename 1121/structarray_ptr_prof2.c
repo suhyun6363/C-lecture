@@ -20,7 +20,7 @@ typedef struct _student {
 	Grade_t* score;
 } Student_t;
 
-void init_student(Student_t* arr, Grade_t sc_table) {
+void init_student(Student_t* arr, Grade_t* sc_table) {
 	for(int i =0; i<STUDENT_NUM; i++) {
 		arr->score = sc_table;
 		
@@ -73,7 +73,8 @@ int main(void) {
 	*/
 
 	//p = studentArray;
-//method 2
+/*
+	//method 2
 	for(int i = 0; i<STUDENT_NUM; i++) {
 		student[i].score = &sc_table[i];
 		student[i].score->CnLinux = 0;
@@ -82,6 +83,7 @@ int main(void) {
 
 	}
 	
+	//me
 	for(int i = 0; i<5; i++) {
 		p->score = &grade[i];
 		p++;
@@ -97,12 +99,13 @@ int main(void) {
 		p++;
 
 	}
-	
+*/
+
 	for(int i = 0 ; i<5; i++) {
 		printf("student[%d]\n", i+1);
-		printf("CnLinux: %lu\n", studentArray[i].score->CnLinux);
-		printf("python: %lu\n", studentArray[i].score->python);
-		printf("comnet: %lu\n", studentArray[i].score->comnet);
+		printf("CnLinux: %lu\n", student[i].score->CnLinux);
+		printf("python: %lu\n", student[i].score->python);
+		printf("comnet: %lu\n", student[i].score->comnet);
 		printf("\n");
 	}
 }

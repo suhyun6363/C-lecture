@@ -50,7 +50,6 @@ int main(void) {
 	Grade_t grade[5];
 	Student_t* p;
 
-
 	
 	/*
 	input_info(&student);
@@ -60,15 +59,13 @@ int main(void) {
 	*/
 
 	p = studentArray;
-	
+	/*	
 	for(int i = 0; i<5; i++) {
 		p->score = &grade[i];
-		p++;
+		p++:	
 		p->score++;
 	}
-	
-	p = studentArray;
-	p->score = grade;
+	*/
 	for(int i = 0; i<5; i++) {
 		p->score->CnLinux = 0;
 		p->score->python = 0;
