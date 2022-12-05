@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//Q1
 int main(void) {
 	int a1[3] = {1, 2, 3};
 	int a2[3] = {10, 11, 12};
