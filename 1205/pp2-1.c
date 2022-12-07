@@ -55,6 +55,7 @@ int main(void) {
 			printf("%d ", **p);
 			(*p)++;
 		}
+		p++;
 		printf("\n");
 	}	
 }
